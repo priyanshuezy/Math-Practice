@@ -10,7 +10,8 @@ import sys
 import os
 
 console = Console()
-DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_square_results.db")
+DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "db", "squares_quiz.db")
+os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
 # ── DB ────────────────────────────────────────────────────────────────────────
 
